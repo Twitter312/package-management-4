@@ -19,6 +19,11 @@ https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.ht
   $ sudo su - ansible \
   $ sudo apt-add-repository ppa:ansible/ansible \
   $ sudo apt install ansible -y
+  $ sudo chown ansible -R /etc/ansible
+  $ vi /etc/ansible/hosts **** add the hosts at the bottom
+  $ vi /etc/ansible/ansible.cfg ****locate host_key checking and uncomment
+  $ vi /tmp/ansible.pem (copy the .pemkey into it)
+  $ chmod 400 /tmp/ansible.pem
 
 ## **Ansible installation on REDHAT EC2**
 #
